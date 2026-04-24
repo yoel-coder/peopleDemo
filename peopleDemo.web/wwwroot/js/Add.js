@@ -13,13 +13,13 @@ $(() => {
         $("#AddForm").append(`
         <div class="row person-row" style="margin-bottom: 10px;">
             <div class="col-md-4">
-                                    <input class="form-control" type="text" name="people[0].firstname" placeholder="First Name" fdprocessedid="ml557" id="firstName">
+                                    <input class="form-control" type="text" name="people[${num}].firstname" placeholder="First Name" fdprocessedid="ml557" id="firstName">
                                 </div>
                                 <div class="col-md-4">
-                                    <input class="form-control" type="text" name="people[0].lastname" placeholder="Last Name" fdprocessedid="6ev6kt"id="lastname">
+                                    <input class="form-control" type="text" name="people[${num}].lastname" placeholder="Last Name" fdprocessedid="6ev6kt"id="lastname">
                                 </div>
                                 <div class="col-md-4">
-                                    <input class="form-control" type="text" name="people[0].age" placeholder="Age" fdprocessedid="x0ujxs"id="age">
+                                    <input class="form-control" type="text" name="people[${num}].age" placeholder="Age" fdprocessedid="x0ujxs"id="age">
                                 </div>
         </div>`)
 
