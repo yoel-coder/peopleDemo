@@ -1,0 +1,53 @@
+﻿<body>
+    <header>
+        <nav b-ud2x8zyu5z="" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-ud2x8zyu5z="" class="container">
+                
+                <button b-ud2x8zyu5z="" class="navbar-toggler"id="AddRow" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-ud2x8zyu5z="" class="navbar-toggler-icon"></span>
+                </button>
+                <div b-ud2x8zyu5z="" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-ud2x8zyu5z="" class="navbar-nav flex-grow-1">
+                        <li b-ud2x8zyu5z="" class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-ud2x8zyu5z="" class="container">
+        <main b-ud2x8zyu5z="" role="main" class="pb-3">
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <button class="btn btn-danger" id="add-rows" fdprocessedid="a79xv7">Add Row</button>
+                    <form style="margin-top: 10px;" method="post"action="/home/MultiAdd" id="AddForm">
+
+                        <button disabled class="btn btn-primary" id="submit-button" fdprocessedid="ey1jt2">Submit</button>
+                        <div id="ppl-rows">
+                            <div class="row person-row" style="margin-bottom: 10px;">
+                                <div class="col-md-4">
+                                    <input class="form-control" type="text" name="people[0].firstname" placeholder="First Name" fdprocessedid="ml557" id="firstName">
+                                </div>
+                                <div class="col-md-4">
+                                    <input class="form-control" type="text" name="people[0].lastname" placeholder="Last Name" fdprocessedid="6ev6kt"id="lastname">
+                                </div>
+                                <div class="col-md-4">
+                                    <input class="form-control" type="text" name="people[0].age" placeholder="Age" fdprocessedid="x0ujxs"id="age">
+                                </div>
+                            </div>
+
+                        </div>
+
+                      
+                    </form>
+                </div>
+            </div>
+          </body>
+
+        </main>
+    </div>
+    @section Scripts{
+        <script src="/js/Add.js"></script>
+    }
